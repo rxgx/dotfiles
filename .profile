@@ -24,16 +24,6 @@ alias dbsrv='/usr/local/Cellar/mysql/5.5.10/support-files/mysql.server'
 alias mongorun='mongod run --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf'
 
 
-# This loads RVM into a shell session.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-# Load RVM into a shell session *as a function*
-[[ -s '/Users/rxgx/.rvm/scripts/rvm' ]] && source '/Users/rxgx/.rvm/scripts/rvm'
-
-# Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
-
-
 # rbenv
 eval "$(rbenv init -)"
 

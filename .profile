@@ -24,26 +24,6 @@ alias dbsrv='/usr/local/Cellar/mysql/5.5.10/support-files/mysql.server'
 alias mongorun='mongod run --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf'
 
 
-# Git Aliases
-alias gd="git diff | mate"
-alias ga="git add"
-alias gbd="git branch -D"
-alias gst="git status"
-alias gca="git commit -am"
-alias gm="git merge --no-ff"
-alias gpt="git push --tags"
-alias gp="git push"
-alias grh="git reset --hard"
-alias gb="git branch"
-alias gcob="git checkout -b"
-alias gco="git checkout"
-alias gba="git branch -a"
-alias gcp="git cherry-pick"
-alias gl="git log --pretty='format:%Cgreen%h%Creset %an - %s' --graph"
-alias gpom="git pull origin master"
-alias gcd='cd "`git rev-parse --show-toplevel`"'
-
-
 # Set Rails Environment to Development
 export RAILS_ENV='development'
 
@@ -55,4 +35,3 @@ eval "$(rbenv init -)"
 
 # node.js
 export NODE_PATH='/usr/local/lib/node_modules'
-

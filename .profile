@@ -11,22 +11,23 @@ PROMPT_COMMAND='PS1="\[\033[0;32m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h\[\033[0;33m
 
 
 # Aliases
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
 alias be='bundle exec'
 alias bake='bundle exec rake'
 alias cuc='bundle exec cucumber'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
 alias s='bundle exec rspec'
+
+# Applications
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 
+# Tools
 alias flushdns='dscacheutil -flushcache'
 alias gitserve='git daemon --reuseaddr --base-path=./ --export-all --verbose'
-alias websrv='sudo /usr/sbin/apachectl'
-alias dbsrv='/usr/local/Cellar/mysql/5.5.10/support-files/mysql.server'
+
+# Services
+alias apache.server='sudo /usr/sbin/apachectl'
+alias mysql.server='/usr/local/Cellar/mysql/5.5.10/support-files/mysql.server'
 alias mongorun='mongod run --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf'
 
 

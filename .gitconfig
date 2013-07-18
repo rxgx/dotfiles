@@ -10,11 +10,11 @@
   cob = checkout -b
   cp = cherry-pick
   d = diff | subl
-  fpo = fetch --prune origin
+  fp = fetch --prune
   ir = !git rebase -i
   l = log --pretty='format:%Cgreen%h%Creset %an - %s' --graph
   rh = reset --hard
-  st = status
+  s = status
 [core]
   excludesfile = /Users/rxgx/.gitignore
 [user]

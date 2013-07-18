@@ -18,17 +18,21 @@ alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
 alias s='bundle exec rspec'
 
+
 # Applications
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+
 
 # Tools
 alias flushdns='dscacheutil -flushcache'
 alias gitserve='git daemon --reuseaddr --base-path=./ --export-all --verbose'
 
+
 # Services
 alias apache.server='sudo /usr/sbin/apachectl'
-alias mysql.server='/usr/local/Cellar/mysql/5.5.10/support-files/mysql.server'
+#alias mysql.server='/usr/local/Cellar/mysql/5.5.10/support-files/mysql.server'
 alias mongorun='mongod run --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf'
+alias redis.server='redis-server /usr/local/etc/redis.conf'
 
 
 # Detect which `ls` flavor is in use
@@ -61,5 +65,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 # Add rbenv init to your shell to enable shims and autocompletion
 eval "$(rbenv init -)"
 
-# node.js
-export NODE_PATH='/usr/local/lib/node_modules'
+# brew node.js
+#export NODE_PATH='/usr/local/lib/node_modules'
+export PATH="/usr/local/share/npm/bin:$PATH"

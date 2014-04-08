@@ -1,4 +1,4 @@
-read -p "Press start..."
+read -p "Press start to continue..."
 cp ./.gemrc ~/
 cp ./.gitconfig ~/
 cp ./.gitignore ~/

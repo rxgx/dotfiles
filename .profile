@@ -1,6 +1,3 @@
-#LDFLAGS  -L/usr/local/Cellar/openssl/0.9.8s/lib
-#CPPFLAGS -I/usr/local/Cellar/openssl/0.9.8s/include
-
 # Prompt Customization
 git_branch() {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || return
@@ -63,8 +60,4 @@ export RAILS_ENV='development'
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Add rbenv init to your shell to enable shims and autocompletion
-eval "$(rbenv init -)"
-
-# brew node.js
-#export NODE_PATH='/usr/local/lib/node_modules'
-export PATH="/usr/local/share/npm/bin:$PATH"
+#eval "$(rbenv init -)"

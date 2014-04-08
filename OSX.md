@@ -50,7 +50,7 @@ Here's what to do after completing a fresh install of OX S.
  * Set font to 12pt Panic Sans
  * Set window size to 128 x 48
 3. [Generate SSH Key](https://help.github.com/articles/generating-ssh-keys)
-4. Download and copy dotfiles
+4. Download and install config files
   `git clone git@github.com:rxgx/dotfiles.git`
 5. Install Homebrew
   `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`

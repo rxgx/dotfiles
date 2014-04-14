@@ -2,7 +2,7 @@
 
 Here's what to do after completing a fresh install of OX S.
 
-### General Config
+## General Config
 
 1. App Store
  * Run Software Update
@@ -57,9 +57,11 @@ Here's what to do after completing a fresh install of OX S.
   `git clone git@github.com:rxgx/dotfiles.git`
 5. Install Homebrew
   `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
+6. Open Atom from command line
+  `ln -s /Applications/Atom.app/Contents/MacOS/Atom /usr/local/bin/atom`
 
 
-
+## Optional
 
 ### Install TextMate Plugins
 

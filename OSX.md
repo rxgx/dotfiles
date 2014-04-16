@@ -52,6 +52,7 @@ Here's what to do after completing a fresh install of OX S.
  * Shells open with `/bin/bash`
  * Set font to 12pt Panic Sans
  * Set window size to 128 x 48
+ * Set ASCII color Blue (4) to lighter shade
 3. [Generate SSH Key](https://help.github.com/articles/generating-ssh-keys)
 4. Download and install config files
   `git clone git@github.com:rxgx/dotfiles.git`

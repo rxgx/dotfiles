@@ -1,26 +1,26 @@
 [alias]
-  #up = !git fetch origin && git rebase origin/master
-  #down = !git checkout master && git merge @{1} --ff-only
-  a = add
-  aa = !git add -u && git add . && git status
-  bd = branch -D
-  c = commit -m
-  cd = cd "`git rev-parse --show-toplevel`"
-  co = checkout
-  cob = checkout -b
-  cp = cherry-pick
-  d = diff | subl
-  fp = fetch --prune
-  ir = !git rebase -i
-  l = log --pretty='format:%Cgreen%h%Creset %an - %s' --graph
-  lg = log --graph --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s %Cred(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  mq = merge --squash
-  pr = pull --rebase
-  rh = reset --hard
-  s = status
+    #up = !git fetch origin && git rebase origin/master
+    #down = !git checkout master && git merge @{1} --ff-only
+    a = add
+    aa = !git add -u && git add . && git status
+    bd = branch -D
+    c = commit -m
+    cd = cd "`git rev-parse --show-toplevel`"
+    co = checkout
+    cob = checkout -b
+    cp = cherry-pick
+    d = diff | subl
+    fp = fetch --prune
+    ir = !git rebase -i
+    l = log --pretty='format:%Cgreen%h%Creset %an - %s' --graph
+    lg = log --graph --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s %Cred(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    mq = merge --squash
+    pr = pull --rebase
+    rh = reset --hard
+    s = status
 [core]
-  excludesfile = /Users/rxgx/.gitignore
+    excludesfile = /Users/rxgx/.gitignore
 	editor = atom --wait
 [user]
-  name = Ryan Gasparini
-  email = ryan@rxgx.com
+    name = Ryan Gasparini
+    email = ryan@rxgx.com

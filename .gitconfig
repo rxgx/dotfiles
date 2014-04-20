@@ -20,6 +20,7 @@
   s = status
 [core]
   excludesfile = /Users/rxgx/.gitignore
+	editor = atom --wait
 [user]
   name = Ryan Gasparini
   email = ryan@rxgx.com

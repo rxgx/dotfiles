@@ -13,10 +13,10 @@ PROMPT_COMMAND='PS1="\[\033[0;32m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h\[\033[0;33m
 # Aliases
 alias be='bundle exec'
 alias bake='bundle exec rake'
-alias cuc='bundle exec cucumber'
+#alias cuc='bundle exec cucumber'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
-alias s='bundle exec rspec'
+#alias s='bundle exec rspec'
 
 
 # Applications
@@ -29,10 +29,10 @@ alias gitserve='git daemon --reuseaddr --base-path=./ --export-all --verbose'
 
 
 # Services
-alias apache.server='sudo /usr/sbin/apachectl'
+#alias apache.server='sudo /usr/sbin/apachectl'
 #alias mysql.server='/usr/local/Cellar/mysql/5.5.10/support-files/mysql.server'
-alias mongorun='mongod run --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf'
-alias redis.server='redis-server /usr/local/etc/redis.conf'
+#alias mongorun='mongod run --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf'
+#alias redis.server='redis-server /usr/local/etc/redis.conf'
 
 
 # Detect which `ls` flavor is in use

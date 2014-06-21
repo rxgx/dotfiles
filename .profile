@@ -59,14 +59,11 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 source ~/.nvm/nvm.sh
 
 # Set Rails Environment to Development
-#export RAILS_ENV='development'
+export RAILS_ENV='development'
 
 # Allow access to the rbenv command-line utility
-#export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Add rbenv init to your shell to enable shims and autocompletion
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
-# brew node.js
-#export NODE_PATH='/usr/local/lib/node_modules'
-#export PATH="/usr/local/share/npm/bin:$PATH"

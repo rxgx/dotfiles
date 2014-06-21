@@ -60,7 +60,8 @@ Here's what to do after completing a fresh install of OX S.
   `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
 6. Open Atom from command line
   `ln -s /Applications/Atom.app/Contents/MacOS/Atom /usr/local/bin/atom`
-
+7. Install Xcode Command Line Tools
+  `xcode-select --install`
 
 ## Optional
 

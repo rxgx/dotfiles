@@ -27,6 +27,8 @@
     sp  = stash pop
     ss  = stash save
     um  = ls-files -u
+[color]
+    ui = true
 [core]
     excludesfile = /Users/rxgx/.gitignore
     editor       = atom --wait

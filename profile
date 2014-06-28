@@ -1,6 +1,3 @@
-#LDFLAGS  -L/usr/local/Cellar/openssl/0.9.8s/lib
-#CPPFLAGS -I/usr/local/Cellar/openssl/0.9.8s/include
-
 # Prompt Customization
 git_branch() {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || return
@@ -30,8 +27,6 @@ alias gitserve='git daemon --reuseaddr --base-path=./ --export-all --verbose'
 
 # Services
 #alias apache.server='sudo /usr/sbin/apachectl'
-#alias mysql.server='/usr/local/Cellar/mysql/5.5.10/support-files/mysql.server'
-#alias mongorun='mongod run --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf'
 #alias redis.server='redis-server /usr/local/etc/redis.conf'
 
 
@@ -66,4 +61,3 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Add rbenv init to your shell to enable shims and autocompletion
 eval "$(rbenv init -)"
-

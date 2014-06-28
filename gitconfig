@@ -20,7 +20,13 @@
     pr  = pull --rebase
     rh  = reset --hard
     s   = status
-    sm  = ls-files -u
+    sa  = stash apply
+    sb  = stash branch
+    sc  = stash clear
+    sl  = stash list
+    sp  = stash pop
+    ss  = stash save
+    um  = ls-files -u
 [core]
     excludesfile = /Users/rxgx/.gitignore
     editor       = atom --wait

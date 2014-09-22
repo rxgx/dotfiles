@@ -34,7 +34,7 @@ Here's what to do after completing a fresh install of OX S.
 
 ### Download & Install Apps
 
-1. [Google Chrome](https://www.google.com/chrome/) and make sure extensions are updated
+1. [Google Chrome & Canary](https://www.google.com/chrome/) and make sure extensions are updated
 2. [TextMate](http://macromates.com/download)
 3. [Dropbox](https://www.dropbox.com/downloading?os=mac) and change menu bar color in preferences
 4. [RubyMine](http://www.jetbrains.com/ruby/) and use RubyMine settings folder from Dropbox
@@ -42,8 +42,12 @@ Here's what to do after completing a fresh install of OX S.
 6. [xScope](http://iconfactory.com/software/xscope)
 7. [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 8. [f.lux](http://justgetflux.com/)
-9. [Anvil](http://anvilformac.com/)
-10. [Shutte](http://fitztrev.github.io/shuttle/)
+9. [Pow](http://pow.cx/) for local sites and subdomains
+9. [Anvil](http://anvilformac.com/) menu bar for Pow sites
+10. [Shuttle](http://fitztrev.github.io/shuttle/) menu bar for SSH
+11. [Transmit](http://panic.com/transmit/) for SCP/FTP
+12. [Cyberduck](http://cyberduck.io) for Rackspace Cloud Files
+13. [Atom Editor](https://atom.io/)
 
 
 ### Development

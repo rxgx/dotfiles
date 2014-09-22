@@ -42,6 +42,8 @@ Here's what to do after completing a fresh install of OX S.
 6. [xScope](http://iconfactory.com/software/xscope)
 7. [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 8. [f.lux](http://justgetflux.com/)
+9. [Anvil](http://anvilformac.com/)
+10. [Shutte](http://fitztrev.github.io/shuttle/)
 
 
 ### Development

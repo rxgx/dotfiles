@@ -26,9 +26,8 @@ alias gitserve='git daemon --reuseaddr --base-path=./ --export-all --verbose'
 
 
 # Services
-#alias apache.server='sudo /usr/sbin/apachectl'
-#alias redis.server='redis-server /usr/local/etc/redis.conf'
-
+alias redis.server='redis-server /usr/local/etc/redis.conf'
+alias postgres.server='pg_ctl -D /usr/local/var/postgres -l'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -61,3 +60,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Add rbenv init to your shell to enable shims and autocompletion
 eval "$(rbenv init -)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

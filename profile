@@ -27,7 +27,7 @@ alias gitserve='git daemon --reuseaddr --base-path=./ --export-all --verbose'
 
 # Services
 alias redis.server='redis-server /usr/local/etc/redis.conf'
-alias pg.server='pg_ctl -D /usr/local/var/postgres'
+alias pg.server='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/log/postgres.log'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

@@ -8,12 +8,12 @@ PROMPT_COMMAND='PS1="\[\033[0;32m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h\[\033[0;33m
 
 
 # Aliases
-alias be='bundle exec'
 alias bake='bundle exec rake'
+alias be='bundle exec'
 #alias cuc='bundle exec cucumber'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
-#alias s='bundle exec rspec'
+alias s='cd ~/Sources'
 
 
 # Applications
@@ -26,7 +26,8 @@ alias gitserve='git daemon --reuseaddr --base-path=./ --export-all --verbose'
 
 
 # Services
-alias redis.server='redis-server /usr/local/etc/redis.conf'
+alias redis.start='redis-server /usr/local/etc/redis.conf'
+alias redis.stop='redis-cli shutdown'
 alias pg.server='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/log/postgres.log'
 
 # Detect which `ls` flavor is in use

@@ -55,24 +55,44 @@ Here's what to do after completing a fresh install of OX S.
 ### Development
 
 1. Open Xcode and agree to license
+
 1. Terminal
  * Set window to Pro
  * Shells open with `/bin/bash`
  * Set font to 12pt Panic Sans
  * Set window size to 128 x 48
  * Set ASCII color Blue (4) to lighter shade
+
 1. [Generate SSH Key](https://help.github.com/articles/generating-ssh-keys)
+
 1. Install Homebrew
-    `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
+
+    ```
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    ```
+
 1. Install updated Git and hide OSX default
 
+    ```
     brew update
     brew install git
     sudo mv /usr/bin/git /usr/bin/git-insecure
+    ```
 
 1. Download and install config files
-    `git clone git@github.com:rxgx/dotfiles.git`
+
+    ```
+    git clone git@github.com:rxgx/dotfiles.git
+    ```
+
 1. Open Atom from command line
-    `ln -s /Applications/Atom.app/Contents/MacOS/Atom /usr/local/bin/atom`
+
+    ```
+    ln -s /Applications/Atom.app/Contents/MacOS/Atom /usr/local/bin/atom
+    ```
+
 1. Install Xcode Command Line Tools
-    `xcode-select --install`
+
+    ```
+    xcode-select --install
+    ````

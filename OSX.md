@@ -7,27 +7,35 @@ Here's what to do after completing a fresh install of OX S.
 1. App Store
  * Run Software Update
  * Install software
-2. Keyboard
+
+1. Keyboard
  * Use F1..12 keys
  * In "Shortcuts", allow press Tab to move between "All Controls"
-3. Trackpad
+
+1. Trackpad
  * Enable tap to click
  * Enable 3-finger-drag
  * Enable swipe with two fingers
  * Increase tracking
-4. Mouse
+
+1. Mouse
  * Set as right button
  * Enable wipe with two fingers
  * Increase tracking
-5. Dock
+
+1. Dock
  * Clean up
  * Set to auto-hide
-6. Finder
+
+1. Finder
  * Clean up menu bar
  * Change view options to show Path & Status Bars
-7. System Preferences: Disable "Show Dashboard as a Space" under Mission Control
-8. Desktop: Snap desktop items to grid
-9. Date & Time
+
+1. System Preferences: Disable "Show Dashboard as a Space" under Mission Control
+
+1. Desktop: Snap desktop items to grid
+
+1. Date & Time
  * Use a 24hr clock
  * Show date
 

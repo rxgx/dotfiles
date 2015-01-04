@@ -65,9 +65,11 @@ Here's what to do after completing a fresh install of OX S.
 1. Install Homebrew
     `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
 1. Install updated Git and hide OSX default
-    `brew update`
-    `brew install git`
-    `sudo mv /usr/bin/git /usr/bin/git-insecure`
+
+    brew update
+    brew install git
+    sudo mv /usr/bin/git /usr/bin/git-insecure
+
 1. Download and install config files
     `git clone git@github.com:rxgx/dotfiles.git`
 1. Open Atom from command line

@@ -10,9 +10,9 @@ PROMPT_COMMAND='PS1="\[\033[0;32m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h\[\033[0;33m
 # Aliases
 alias bake='bundle exec rake'
 alias be='bundle exec'
-#alias cuc='bundle exec cucumber'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
+alias heroku_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -U rxgx -d'
 alias s='cd ~/Sources'
 
 

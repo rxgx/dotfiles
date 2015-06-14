@@ -31,7 +31,6 @@
     ui = true
 [core]
     excludesfile = /Users/rxgx/.gitignore
-    editor       = atom --wait
 [merge]
     conflictstyle = diff3
 [user]

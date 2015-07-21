@@ -1,7 +1,9 @@
 [alias]
     a   = add
     aa  = !git add -u && git add . && git status
-    bd  = branch -D
+    bd  = branch -d
+    bdr = branch -dr
+    bD  = branch -D
     bm  = branch -m
     c   = commit -m
     ca  = commit --amend -m

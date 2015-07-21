@@ -29,6 +29,7 @@
 [color]
     ui = true
 [core]
+    editor       = atom --wait
     excludesfile = ~/.gitignore
 [merge]
     conflictstyle = diff3

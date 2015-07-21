@@ -10,7 +10,6 @@
     cob = checkout -b
     cp  = cherry-pick
     d   = diff | subl
-    fp  = fetch --prune
     fl  = log -u
     ir  = !git rebase -i
     l   = log --pretty=format:'%C(green)%h%C(reset) %s %Cblue[%an]%Creset' --graph
@@ -36,3 +35,5 @@
 [user]
     name  = Ryan Gasparini
     email = ryan@rxgx.com
+[fetch]
+    prune = true

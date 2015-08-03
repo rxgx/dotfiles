@@ -1,7 +1,7 @@
 # Prompt Customization
 git_branch() {
-    ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-    echo " (${ref#refs/heads/})"
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo " (${ref#refs/heads/})"
 }
 
 PROMPT_COMMAND='PS1="\[\033[0;32m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h\[\033[0;33m\] \w\[\033[0;35m\]$(git_branch)\[\033[00m\]: "'
@@ -16,12 +16,8 @@ alias heroku_restore='pg_restore --verbose --clean --no-acl --no-owner -h localh
 alias s='cd ~/Sources'
 
 
-# Applications
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
-
-
 # Tools
-alias flushdns='dscacheutil -flushcache'
+alias flushdns='sudo killall -HUP mDNSResponder'
 alias gitserve='git daemon --reuseaddr --base-path=./ --export-all --verbose'
 
 
@@ -32,9 +28,9 @@ alias pg.server='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/log/postgre
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
+  colorflag="--color"
 else # OS X `ls`
-	colorflag="-G"
+  colorflag="-G"
 fi
 
 # List all files colorized in long format

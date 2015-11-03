@@ -18,6 +18,7 @@ alias s='cd ~/Sources'
 
 # Tools
 alias flushdns='sudo killall -HUP mDNSResponder'
+alias dockercleanup='docker rm -v $(docker ps -a -q -f status=exited)'
 alias gitserve='git daemon --reuseaddr --base-path=./ --export-all --verbose'
 
 

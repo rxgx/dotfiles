@@ -13,7 +13,7 @@
     cob = checkout -b
     cp  = cherry-pick
     d   = diff | subl
-    fpa = fetch --prune --all
+    fpa = fetch --all
     fl  = log -u
     ir  = !git rebase -i
     l   = log --pretty=format:'%C(green)%h%C(reset) %s %Cblue[%an]%Creset' --graph

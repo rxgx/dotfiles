@@ -23,7 +23,6 @@ git_branch() {
 PROMPT_COMMAND='PS1="\[${COLOR_GREEN}\]\u\[${COLOR_NONE}\]@\[${COLOR_CYAN}\]\h \[${COLOR_YELLOW}\]\w\[${COLOR_RED}\]$(docker_machine)\[${COLOR_PURPLE}\]$(git_branch)\[${COLOR_NONE}\]: "'
 
 alias dockerclean='docker rm -v $(docker ps -a -q -f status=exited)'
-alias dockerips="docker ps -q | xargs docker inspect --format '{{ .Id }} - {{ .Name }} - {{ .NetworkSettings.IPAddress }}'"
 alias dockerprune='docker rmi $(docker images -f "dangling=true" -q)'
 
 alias flushdns='sudo killall -HUP mDNSResponder'

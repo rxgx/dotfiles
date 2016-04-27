@@ -11,13 +11,13 @@ COLOR_YELLOW='\e[0;33m'
 COLOR_GRAY='\e[0;37m'
 
 docker_machine() {
-  machine=$DOCKER_MACHINE_NAME || return
+  machine=$(docker ps 2> /dev/null) || return
   echo " [$DOCKER_MACHINE_NAME]"
 }
 
 git_branch() {
-    ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-    echo " (${ref#refs/heads/})"
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo " (${ref#refs/heads/})"
 }
 
 PROMPT_COMMAND='PS1="\[${COLOR_GREEN}\]\u\[${COLOR_NONE}\]@\[${COLOR_CYAN}\]\h \[${COLOR_YELLOW}\]\w\[${COLOR_RED}\]$(docker_machine)\[${COLOR_PURPLE}\]$(git_branch)\[${COLOR_NONE}\]: "'
@@ -30,9 +30,9 @@ alias npmg='npm list -g --depth=0'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
+  colorflag="--color"
 else # OS X `ls`
-	colorflag="-G"
+  colorflag="-G"
 fi
 
 # List all files colorized in long format

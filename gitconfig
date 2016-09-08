@@ -8,7 +8,7 @@
     c   = commit -m
     ca  = commit --amend -m
     cc  = rev-list --count master..
-    cd  = cd "`git rev-parse --show-toplevel`"
+    cd  = !echo "`git rev-parse --show-toplevel`"
     co  = checkout
     cob = checkout -b
     cp  = cherry-pick

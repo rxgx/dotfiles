@@ -11,35 +11,36 @@ COLOR_YELLOW='\e[0;33m'
 COLOR_GRAY='\e[0;37m'
 
 docker_machine() {
-  machine=$(docker ps 2> /dev/null) || return
+  machine=$(env | grep DOCKER 2> /dev/null) || return
   echo " [$DOCKER_MACHINE_NAME]"
 }
 
 git_branch() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo " (${ref#refs/heads/})"
+    ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+    echo " (${ref#refs/heads/})"
 }
 
 PROMPT_COMMAND='PS1="\[${COLOR_GREEN}\]\u\[${COLOR_NONE}\]@\[${COLOR_CYAN}\]\h \[${COLOR_YELLOW}\]\w\[${COLOR_RED}\]$(docker_machine)\[${COLOR_PURPLE}\]$(git_branch)\[${COLOR_NONE}\]: "'
 
-alias dockerclean='docker rm -v $(docker ps -a -q -f status=exited)'
-alias dockerprune='docker rmi $(docker images -f "dangling=true" -q)'
+alias dck-clean='docker rm -v $(docker ps -a -q -f status=exited)'
+alias dck-prune='docker rmi $(docker images -f "dangling=true" -q)'
+alias dck-space='docker rm $(docker ps -aq)'
 
 alias flushdns='sudo killall -HUP mDNSResponder'
 alias npmg='npm list -g --depth=0'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-  colorflag="--color"
+	colorflag="--color"
 else # OS X `ls`
-  colorflag="-G"
+	colorflag="-G"
 fi
 
 # List all files colorized in long format
-alias l="ls -l ${colorflag}"
+alias lsl="ls -l ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias la="ls -la ${colorflag}"
+alias lsa="ls -lash ${colorflag}"
 
 # List only directories
 alias lsd='ls -l ${colorflag} | grep "^d"'

@@ -1,57 +1,54 @@
 [alias]
-  a   = add
-  aa  = !git add -u && git add . && git status
-  bd  = branch -d
-  bdr = branch -dr
-  bD  = branch -D
-  bm  = branch -m
-  c   = commit -m
-  ca  = commit --amend -m
-  cc  = rev-list --count master..
-  cd  = !echo "`git rev-parse --show-toplevel`"
-  co  = checkout
-  cob = checkout -b
-  cp  = cherry-pick
-  d   = diff | subl
-  fa  = fetch --all
-  fl  = log -u
-  ir  = !git rebase -i
-  l   = log --pretty=format:'%C(green)%h%C(reset) %s %Cblue[%an]%Creset' --graph
-  lf  = log --pretty=format:'%C(green)%h%C(reset)%C(yellow)%d%C(reset) %s %C(blue)[%cn]%C(reset)' --decorate --numstat
-  lg  = log --pretty=format:'%C(green)%h%C(reset)%C(yellow)%d%C(reset) %s %C(red)(%cr)%C(reset) %C(blue)[%an]%C(reset)' --abbrev-commit --graph
-  mq  = merge --squash
-  pr  = pull --rebase
-  rh  = reset --hard
-  s   = status
-  sa  = stash apply
-  sb  = stash branch
-  sc  = stash clear
-  sl  = stash list
-  sp  = stash pop
-  ss  = stash save
-  um  = ls-files -u
+    a   = add
+    aa  = !git add -u && git add . && git status
+    bd  = branch -D
+    bm  = branch -m
+    c   = commit -m
+    ca  = commit --amend -m
+    cd  = cd "`git rev-parse --show-toplevel`"
+    co  = checkout
+    cob = checkout -b
+    cp  = cherry-pick
+    d   = diff | subl
+    fa  = fetch --all
+    fl  = log -u
+    ir  = !git rebase -i
+    l   = log --pretty=format:'%C(green)%h%C(reset) %s %Cblue[%an]%Creset' --graph
+    lf  = log --pretty=format:'%C(green)%h%C(reset)%C(yellow)%d%C(reset) %s %C(blue)[%cn]%C(reset)' --decorate --numstat
+    lg  = log --pretty=format:'%C(green)%h%C(reset)%C(yellow)%d%C(reset) %s %C(red)(%cr)%C(reset) %C(blue)[%an]%C(reset)' --abbrev-commit --graph
+    mq  = merge --squash
+    pr  = pull --rebase
+    rh  = reset --hard
+    s   = status
+    sa  = stash apply
+    sb  = stash branch
+    sc  = stash clear
+    sl  = stash list
+    sp  = stash pop
+    ss  = stash save
+    um  = ls-files -u
 [color]
 	ui = true
 [core]
-  editor       = atom --wait
-  excludesfile = /Users/rxgx/.gitignore
+    editor       = atom --wait
+    excludesfile = /Users/rxgx/.gitignore
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [fetch]
-  prune = true
+    prune = true
 [merge]
-  conflictstyle = diff3
+    conflictstyle = diff3
 [user]
-  name  = Ryan Gasparini
-  email = ryan@rxgx.com
+    name  = Ryan Gasparini
+    email = ryan@rxgx.com
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+	oldNormal = red
+	oldHighlight = red 52
+	newNormal = green
+	newHighlight = green 22
 [color "diff"]
 	meta = 227
-	frag = magenta bold
-	commit = 227 bold
-	old = red bold
-	new = green bold
+	frag = magenta
+	commit = 227
+	old = red
+	new = green
 	whitespace = red reverse

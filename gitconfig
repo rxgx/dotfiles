@@ -9,7 +9,7 @@
     co  = checkout
     cob = checkout -b
     cp  = cherry-pick
-    d   = diff | subl
+    d   = diff
     fa  = fetch --all
     fl  = log -u
     ir  = !git rebase -i
@@ -28,11 +28,11 @@
     ss  = stash save
     um  = ls-files -u
 [color]
-	ui = true
+	  ui = true
 [core]
     editor       = atom --wait
     excludesfile = /Users/rxgx/.gitignore
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	  pager = diff-so-fancy | less --tabs=4 -RFX
 [fetch]
     prune = true
 [merge]
@@ -41,14 +41,14 @@
     name  = Ryan Gasparini
     email = ryan@rxgx.com
 [color "diff-highlight"]
-	oldNormal = red
-	oldHighlight = red 52
-	newNormal = green
-	newHighlight = green 22
+	  oldNormal = red
+	  oldHighlight = red 52
+	  newNormal = green
+	  newHighlight = green 22
 [color "diff"]
-	meta = 227
-	frag = magenta
-	commit = 227
-	old = red
-	new = green
-	whitespace = red reverse
+	  meta = 227
+	  frag = magenta
+	  commit = 227
+	  old = red
+	  new = green
+	  whitespace = red reverse

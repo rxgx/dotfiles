@@ -1,3 +1,6 @@
+color_prompt=yes
+force_color_prompt=yes
+
 # Prompt Customization
 COLOR_NONE='\e[0m' # No Color
 COLOR_WHITE='\e[1;37m'
@@ -10,17 +13,12 @@ COLOR_PURPLE='\e[0;35m'
 COLOR_YELLOW='\e[0;33m'
 COLOR_GRAY='\e[0;37m'
 
-docker_machine() {
-  machine=$(env | grep DOCKER 2> /dev/null) || return
-  echo " [$DOCKER_MACHINE_NAME]"
-}
-
 git_branch() {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || return
     echo " (${ref#refs/heads/})"
 }
 
-PROMPT_COMMAND='PS1="\[${COLOR_GREEN}\]\u\[${COLOR_NONE}\]@\[${COLOR_CYAN}\]\h \[${COLOR_YELLOW}\]\w\[${COLOR_RED}\]$(docker_machine)\[${COLOR_PURPLE}\]$(git_branch)\[${COLOR_NONE}\]: "'
+PROMPT_COMMAND='PS1="\[${COLOR_GREEN}\]\u\[${COLOR_NONE}\]@\[${COLOR_CYAN}\]\h \[${COLOR_YELLOW}\]\w\[${COLOR_PURPLE}\]$(git_branch)\[${COLOR_NONE}\]: "'
 
 alias dck-clean='docker rm -v $(docker ps -a -q -f status=exited)'
 alias dck-prune='docker rmi $(docker images -f "dangling=true" -q)'

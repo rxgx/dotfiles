@@ -25,7 +25,10 @@ alias dck-prune='docker rmi $(docker images -f "dangling=true" -q)'
 alias dck-space='docker rm $(docker ps -aq)'
 
 alias flushdns='sudo killall -HUP mDNSResponder'
-alias npmg='npm list -g --depth=0'
+alias ipaddress='curl ipinfo.io/ip'
+#alias terraform='~/terraform'
+alias npmlsg='npm list -g --depth=0'
+alias npmlsl='npm list -g --depth=0 --link=true'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

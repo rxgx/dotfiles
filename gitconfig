@@ -2,7 +2,10 @@
     a   = add
     aa  = !git add -u && git add . && git status
     bd  = branch -D
-    bm  = branch -m
+    bmg = branch --merged
+    bmv = branch -m
+    br = branch -r
+    brm = branch -r --merged
     c   = commit -m
     ca  = commit --amend -m
     cd  = cd "`git rev-parse --show-toplevel`"

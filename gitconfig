@@ -36,6 +36,10 @@
     editor = code --wait
     excludesfile = /Users/ryan/.gitignore
 	pager = diff-so-fancy | less --tabs=4 -RFX
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [fetch]
     prune = true
 [merge]

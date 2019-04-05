@@ -31,7 +31,7 @@
     ss  = stash save
     um  = ls-files -u
 [color]
-	ui = true
+	ui = auto
 [core]
     editor = code --wait
     excludesfile = /Users/ryan/.gitignore
@@ -44,6 +44,8 @@
     prune = true
 [merge]
     conflictstyle = diff3
+[rerere]
+    enabled = true
 [user]
     name  = Ryan Gasparini
     email = ryan@rxgx.com
@@ -53,7 +55,7 @@
 	newNormal = green
 	newHighlight = green 22
 [color "diff"]
-	meta = 227
+	meta = normal
 	frag = magenta
 	commit = 227
 	old = red

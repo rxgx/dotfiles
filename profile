@@ -23,6 +23,7 @@ PROMPT_COMMAND='PS1="\[${COLOR_GREEN}\]\u\[${COLOR_NONE}\]@\[${COLOR_CYAN}\]\h \
 alias dck-clean='docker rm -v $(docker ps -a -q -f status=exited)'
 alias dck-prune='docker rmi $(docker images -f "dangling=true" -q)'
 alias dck-space='docker rm $(docker ps -aq)'
+alias dck-stat='docker ps -a --format="table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Command}}\t{{.Status}}"'
 
 alias flushdns='sudo killall -HUP mDNSResponder'
 alias ipaddress='curl ipinfo.io/ip'
@@ -57,3 +58,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # Node Environment
 export NODE_ENV=development
+
+# Go environment
+export GO111MODULE=on
+export GOPATH=$HOME/go
+
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$(go env GOPATH)/bin"

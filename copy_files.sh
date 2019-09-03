@@ -17,11 +17,11 @@ echo -e "${blue}This will overwrite your existing dotfiles!${NC}"
 
 read -p "Press start to continue..."
 
-declare -a files=("gemrc" "gitconfig" "gitignore" "profile")
+declare -a files=("gemrc" "gitconfig" "gitignore" "npmignore" "profile")
 
 for i in "${files[@]}"
 do
-    cp "./${i}" "${HOME}/.${i}"
+    cp "./files/${i}" "${HOME}/.${i}"
 done
 
 source ~/.profile

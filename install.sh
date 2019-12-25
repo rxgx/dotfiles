@@ -1,6 +1,6 @@
 #!/bin/zsh  
 
-cp -arv "./files/." $HOME
+cp -arv "`pwd`/files/." $HOME
 
 sudo chsh -s `which zsh`
 

@@ -12,8 +12,8 @@
 blue='\x1B[1;33m'
 NC='\x1B[0m' # No Color
 
-cp -r "./files" ~
+cp -rv "./files/*" ~
 
-chsh -s /bin/zsh
+chsh -s /usr/bin/zsh
 
 source ~/.zshrc

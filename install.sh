@@ -5,6 +5,6 @@ shell () {
   ps -p $$ | tail -1 | awk '{print $NF}'
 }
 
-cp -arv "`pwd`/files/." $HOME
+cp -arv "$PWD/files/." $HOME
 
 sudo chsh -s `which zsh`

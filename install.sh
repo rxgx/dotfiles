@@ -12,11 +12,6 @@
 blue='\x1B[1;33m'
 NC='\x1B[0m' # No Color
 
-declare -a files=(".gemrc" ".gitconfig" ".gitignore" ".npmignore" ".zshrc")
+cp -r "./files/*" "${HOME}/"
 
-for i in "${files[@]}"
-do
-    cp "./${i}" "${HOME}/${i}"
-done
-
-source ~/.zprofile
+source ~/.zshrc

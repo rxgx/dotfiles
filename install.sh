@@ -1,4 +1,4 @@
-#!/bin/sh  
+#!/bin/zsh  
 
 cp -arv "./files/." $HOME
 

@@ -16,7 +16,7 @@ declare -a files=(".gemrc" ".gitconfig" ".gitignore" ".npmignore" ".zshrc")
 
 for i in "${files[@]}"
 do
-    cp "./${i}" "${HOME}/.${i}"
+    cp "./${i}" "${HOME}/${i}"
 done
 
 source ~/.zprofile

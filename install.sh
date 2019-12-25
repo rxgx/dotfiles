@@ -12,8 +12,7 @@
 blue='\x1B[1;33m'
 NC='\x1B[0m' # No Color
 
-cp -arv "./files/." ~
-cp -arv "./files/.zsh" ~
+cp -arv "files/" $HOME
 
 chsh -s /usr/bin/zsh
 

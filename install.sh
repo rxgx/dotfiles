@@ -1,6 +1,6 @@
 #!/bin/sh  
 
-cp -arv "files/." $HOME
+cp -arv "./files/." $HOME
 
 chsh -s /usr/bin/zsh
 

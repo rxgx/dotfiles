@@ -12,10 +12,6 @@
 blue='\x1B[1;33m'
 NC='\x1B[0m' # No Color
 
-echo -e "${blue}This will overwrite your existing dotfiles!${NC}"
-
-read -p "Press start to continue..."
-
 declare -a files=(".gemrc" ".gitconfig" ".gitignore" ".npmignore" ".zshrc")
 
 for i in "${files[@]}"

@@ -2,6 +2,6 @@
 
 cp -arv "./files/." $HOME
 
-chsh -s /usr/bin/zsh
+sudo chsh -s `which zsh`
 
 source ~/.zshrc

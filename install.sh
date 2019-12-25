@@ -1,4 +1,4 @@
-#!/bin/zsh  
+#! /usr/bin/env bash
 
 cp -arv "`pwd`/files/." $HOME
 

@@ -31,11 +31,11 @@
     ss  = stash save
     um  = ls-files -u
 [color]
-	ui = auto
+    ui = auto
 [core]
     editor = code --wait
     excludesfile = /Users/ryan/.gitignore
-	pager = diff-so-fancy | less --tabs=4 -RFX
+    pager = diff-so-fancy | less --tabs=4 -RFX
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
@@ -49,14 +49,14 @@
 [user]
     name  = Ryan Gasparini
 [color "diff-highlight"]
-	oldNormal = red
-	oldHighlight = red 52
-	newNormal = green
-	newHighlight = green 22
+    oldNormal = red
+    oldHighlight = red 52
+    newNormal = green
+    newHighlight = green 22
 [color "diff"]
-	meta = normal
-	frag = magenta
-	commit = 227
-	old = red
-	new = green
-	whitespace = red reverse
+    meta = normal
+    frag = magenta
+    commit = 227
+    old = red
+    new = green
+    whitespace = red reverse

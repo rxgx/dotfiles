@@ -48,7 +48,6 @@
     enabled = true
 [user]
     name  = Ryan Gasparini
-    email = ryan@rxgx.com
 [color "diff-highlight"]
 	oldNormal = red
 	oldHighlight = red 52

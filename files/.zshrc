@@ -12,3 +12,7 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+# autocomplete for terraform
+autoload -U +X compinit && compinit
+complete -o nospace -C /usr/local/bin/terraform terraform

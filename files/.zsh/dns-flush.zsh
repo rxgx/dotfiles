@@ -1,1 +1,1 @@
-export flushdns='sudo killall -HUP mDNSResponder';
+alias flushdns='sudo killall -HUP mDNSResponder'

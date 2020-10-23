@@ -32,22 +32,6 @@
     um  = ls-files -u
 [color]
     ui = auto
-[core]
-    editor = code --wait
-    excludesfile = ~/.gitignore
-    pager = diff-so-fancy | less --tabs=4 -RFX
-[diff]
-    tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
-[fetch]
-    prune = true
-[merge]
-    conflictstyle = diff3
-[rerere]
-    enabled = true
-[user]
-    name  = Ryan Gasparini
 [color "diff-highlight"]
     oldNormal = red
     oldHighlight = red 52
@@ -60,5 +44,22 @@
     old = red
     new = green
     whitespace = red reverse
+[core]
+    editor = code --wait
+    excludesfile = ~/.gitignore
+    pager = diff-so-fancy | less --tabs=4 -RFX
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[fetch]
+    prune = true
 [init]
-	defaultBranch = main
+    defaultBranch = main
+[merge]
+    conflictstyle = diff3
+[rerere]
+    enabled = true
+[user]
+    name  = Ryan Gasparini
+    email = ryan@rxgx.com

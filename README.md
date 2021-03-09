@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-To setup a newly created development environment such as [Visual Code Online](https://docs.microsoft.com/en-us/visualstudio/online/reference/personalizing).
+To setup a newly created development environment such as ~[Visual Code Online](https://docs.microsoft.com/en-us/visualstudio/online/reference/personalizing)~ [GitHub Codespaces](https://github.com/features/codespaces).
 
 ### Instructions
 

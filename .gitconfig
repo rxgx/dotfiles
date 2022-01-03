@@ -46,7 +46,7 @@
     whitespace = red reverse
 [core]
     editor = code --wait
-    excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignoreall
     pager = diff-so-fancy | less --tabs=4 -RFX
 [diff]
     tool = default-difftool

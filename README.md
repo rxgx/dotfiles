@@ -5,9 +5,13 @@ To setup a newly created development environment such as ~[Visual Code Online](h
 
 ### Instructions
 
-The contents of the dotfiles will be copied to the respective file in your user's home directory.
+This project is how I manage my dotfiles. I've followed the article [Managing my dotfiles as a git repository] to avoid having to install extra tools and scripts. The contents of this repo are to be copied into your user's home directory by following these steps.
 
-    bash install.sh
+    cd ~
+    git init
+    git remote add origin git@github.com:rxgx/dotfiles.git
+    git fetch
+    git checkout -f master
 
 Set your name and email as the global user
 
